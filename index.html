@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/scripts/index.js" async></script>
+
+    <title>Order #10293838</title>
+  </head>
+  <body>
+    <div class="banner">
+      <img class="banner__icon" src="/assets/icons/party-icon.svg" alt="" />
+      <h1 class="banner__heading">Let The Fun Begin!</h1>
+      <div class="banner__text">
+        <p class="banner__paragraph">
+          Thanks for your order, we'll have it with you as soon as possible.
+        </p>
+        <p class="banner__paragraph">
+          Your order number is #10293838 and a confirmation email has been sent
+          to the address provided.
+        </p>
+      </div>
+      <p class="banner__label">Order Even Faster in Future</p>
+      <div class="banner__button">CREATE AN ACCOUNT</div>
+    </div>
+    <div class="content">
+      <h2 class="content__heading">Here's What You've Ordered</h2>
+      <div class="order">
+        <div class="order__section order__basket">
+          <div class="order__basket-item">
+            <img
+              class="order__basket-item-image"
+              src="/assets/images/prod-TN-1.jpg"
+              alt=""
+            />
+            <div class="order__basket-item-details">
+              <p class="order__basket-item-name">
+                17ft x 12ft Jumpking Deluxe Rectangular Trampoline with
+                Enclosure
+              </p>
+              <div class="order__basket-item-price">
+                <p class="order__basket-item-price--old">£1069.00</p>
+                <p>£949.00</p>
+              </div>
+            </div>
+            <p class="order__basket-item-quantity">QTY 1</p>
+          </div>
+          <div class="order__basket-item">
+            <img
+              class="order__basket-item-image"
+              src="/assets/images/prod-TN-2.jpg"
+              alt=""
+            />
+            <div class="order__basket-item-details">
+              <p class="order__basket-item-name">
+                14ft Salta Black Round Comfort Edition Trampoline with Enclosure
+              </p>
+              <div class="order__basket-item-price">
+                <p>£369.00</p>
+              </div>
+            </div>
+            <p class="order__basket-item-quantity">QTY 1</p>
+          </div>
+        </div>
+
+        <div class="order__section order__invoice">
+          <div class="order__invoice-section">
+            <div class="order__invoice-row">
+              <p class="order__invoice-row-label">Subtotal</p>
+              <p class="order__invoice-row-value">£1318.00</p>
+            </div>
+            <div class="order__invoice-row">
+              <p class="order__invoice-row-label">Delivery</p>
+              <p class="order__invoice-row-value">FREE</p>
+            </div>
+            <div class="order__invoice-row">
+              <div class="order__invoice-delivery-option">
+                <p>Next Working Day</p>
+                <p class="order__invoice-delivery-condition">
+                  (if ordered before 3pm)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="order__invoice-section">
+            <div class="order__invoice-row">
+              <p class="order__invoice-row-label">Total</p>
+              <p
+                class="order__invoice-row-value order__invoice-row-value--large"
+              >
+                £1318.00
+              </p>
+            </div>
+          </div>
+          <div class="order__invoice-section">
+            <div class="order__invoice-payment-method">
+              <p>You paid using Mastercard</p>
+              <img
+                class="order__invoice-payment-method-image"
+                src="/assets/icons/card-icon.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer__p">Subscribe for the latest Offers</p>
+      <button class="footer__button" onclick="openModal()">Subscribe</button>
+    </footer>
+    <div
+      id="modal-container"
+      class="modal__container modal__container--inactive"
+    >
+      <div class="modal">
+        <div class="modal__close-button" onclick="closeModal()">
+          <div class="modal__close-button-cross">
+            <div
+              class="modal__close-button-rect modal__close-button-rect-1"
+            ></div>
+            <div
+              class="modal__close-button-rect modal__close-button-rect-2"
+            ></div>
+          </div>
+          <p class="modal__close-button-p">Close</p>
+        </div>
+        <div class="modal__banner">
+          <p>Newsletter Signup</p>
+        </div>
+        <form class="form" action="">
+          <label class="form__label" for="modal__name"
+            >Your Name<span class="form__label-asterisk">*</span>
+          </label>
+          <input class="form__input" type="text" name="name" id="modal__name" />
+          <label class="form__label" for="modal__tele"
+            >Your Telephone Number<span class="form__label-asterisk">*</span>
+          </label>
+          <input
+            class="form__input"
+            type="tel"
+            name="telephone"
+            id="modal__tele"
+          />
+          <label class="form__label" for="modal__email"
+            >Your Email Address<span class="form__label-asterisk"
+              >*</span
+            ></label
+          >
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            id="modal__email"
+          />
+          <button type="submit" class="form__submit">Signup</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

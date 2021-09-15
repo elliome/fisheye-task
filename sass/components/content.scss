@@ -1,0 +1,12 @@
+@use '../abstracts/variables';
+
+.content {
+    padding: 0 2rem;
+    font-family: variables.$font-1;
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1.5rem 0;
+    }
+}
